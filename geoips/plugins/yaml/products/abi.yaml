@@ -61,6 +61,15 @@ spec:
       product_defaults: WV-Upper
       spec:
         variables: ["B08BT"] # B08 abi, 6.2um Upper-level WV; B08 ahi 6.2429um Upper-level WV; B05 seviri IR6.2
+    - name: Shortwave-IR
+      source_names: [abi]
+      docstring: |
+        3.9 um Shortwave Infrared band. This band senses emitted terrestrial radiation and significantly reflected solar radiation. 
+        Among many things, this can identify fog and low clouds at night, as well as identify fire hot spots, volcanic ash, and estimate sea surface
+        temperatures.
+      product_defaults: Shortwave-IR
+      spec:
+        variables: ["B07BT"] # B07 abi, 3.9um Shortwave IR
     - name: Visible
       source_names: [abi]
       docstring: |
